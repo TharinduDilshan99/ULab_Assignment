@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="UI Icons">
+<mask id="mask0_108_283" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<rect id="Bounding box" width="16" height="16" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_108_283)">
+<path id="add" d="M7.1833 8.81667H3.67969V7.1833H7.1833V3.67969H8.81667V7.1833H12.3203V8.81667H8.81667V12.3203H7.1833V8.81667Z" fill="#FC5E64"/>
+</g>
+</g>
+</svg>

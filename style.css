@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    display: flex;
+    background: #0D101B;
+    height: 100%;
+    /* background: linear-gradient(to bottom left, #30D3DA 0%, #FA5F6B 100%), #0D101B;
+    background-blend-mode: overlay; */
+    /* margin: 0; */
+    /* height: 100vh; */
+    color: white;
+    font-family: 'Inter';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: inline-flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 339px;
+   
+}
+
+.search-sort{
+    display: inline-flex;
+}
+
+.actions h1 {
+    color: #E2E2E2;
+    font-family: 'Inter'; 
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 41.6px; 
+    display: flex;
+    padding: 4px 8px 4px 0px;
+    align-items: center;
+    
+}
+
+.search-bar {
+    position: relative;
+    width: 300px; 
+    margin: 0 auto;
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #525252; 
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 12px 8px 30px;
+    background-color: #171f41;
+    border: 1px solid #a4a3a3;
+    border-radius: 4px;
+    color: rgba(122, 128, 153, 0.61);
+    font-family: "inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.search-bar input:focus {
+    border: 1px solid #30D3DA;
+    outline: none;
+}
+
+.dropdown select {
+    background: none; /* Remove background color */
+    cursor: pointer;
+    margin: 0 auto;
+    border: none;
+    margin-left: 0;
+    color: var(--Secondary-Chairsyde-White, #FFF);
+    font-family: "inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    appearance: none; 
+    max-width: 140px;
+    outline: none; 
+    background: url('images/Drop Down.svg') no-repeat 82px center; /* Add the icon */
+    background-size: 16px 16px;
+    padding: 8px 0px 8px 10px; 
+ }
+
+ .dropdown select option {
+    background-color: #0D101B; 
+    border: 1px solid #4A516D;
+    color: #C3C9D0; /* Font color for options */
+    font-family: 'Inter';
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+}
+
+ .actions button {
+    border-radius: 4px;
+    background-color: #0D101B;
+    color: #FC5E64;
+    border: 1px solid #FC5E64;
+    padding: 8px 16px 8px 36px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    background: url('images/Plus icon.svg') no-repeat 10px center;
+    background-size: 16px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.actions button:hover {
+    background-color: #FC5E64;
+    color: #0D101B;
+    border: 1px solid #0D101B;
+}
+
+
+/* grid-layout */
+
+.grid-layout {
+    display: grid;
+    gap: 20px;
+    padding: 2rem 4%;
+    margin-top: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.card-layout {
+    max-width: 436px;
+    max-height: 224px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    display: flex;
+    padding: 15px;
+    position: relative;
+    border-radius: 12px;
+    background: rgba(33, 39, 46, 0.40);
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
+}
+.image-container{
+
+    width: 172px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.image-container img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.playlist-details{
+
+    flex: 1;
+    padding-bottom: 28px;
+}
+.playlist-details h3{
+
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.playlist-details p{
+
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: rgba(230, 230, 230, 0.59);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.dropdown1{
+
+     position: absolute;
+     top: 10px;
+    right: 10px;
+}
+.menu-btn{
+
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #171f41;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.dropdown1-content a {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown1-content a:hover {
+    background-color:#181B25;
+}
+
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+
+
+@media (min-width: 1023px) {
+    
+    .actions {
+        gap: 339px;
+       
+    }
+    
+    h1 {        
+        margin: 48px 131px 32px 49px;        
+    }
+
+    .search-sort {
+        margin: 55px 0px 39px 0px; 
+    }
+
+    .create-btn {
+        margin: 55px 50px 39px 131px;       
+    }
+
+
+  }
+
+@media screen and (max-width: 1023px) and (min-width: 767px) {   
+    .actions {
+        gap: 133px;
+    }
+
+    h1 {        
+        margin: 48px 30px 32px 20px;        
+    }
+
+    .search-sort {
+        margin: 55px 0px 39px 0px; 
+    }
+
+    .create-btn {
+        margin: 55px 21px 39px 30px;       
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card-layout {
+        max-height: 300px;
+        flex-direction: column;
+    }
+
+    .playlist-details{
+        flex: 1;
+    }
+
+    .playlist-details h3{
+        font-size: 0.8rem;
+        line-height:10px;
+    }
+    
+    .playlist-details p{
+        font-size: 0.7rem;
+        line-height: 10px;
+    }
+
+    .image-container{
+        padding-top: 10px;
+        width: 400px;
+        max-height: 150px;
+        margin-bottom: 15px;   
+    }
+
+    .image-container img{   
+        object-fit: cover;
+    }
+
+    .dropdown1{
+        position: absolute;
+        top: 150px;
+       right: 10px;
+   }
+   
+  }
+
+@media screen and (max-width: 767px) and (min-width: 707px) {
+    
+    .actions {
+        gap: 32px;      
+    }
+
+    h1 {        
+        margin: 48px 0px 32px 20px;        
+    }
+
+    .search-sort {
+        margin: 55px 0px 39px 0px; 
+    }
+
+    .create-btn {
+        margin: 55px 21px 39px 0px;       
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card-layout {
+        max-height: 300px;
+        flex-direction: column;
+    }
+
+    .playlist-details{
+        flex: 1;      
+    }
+
+    .playlist-details h3{ 
+        font-size: 0.8rem;
+        line-height:10px;    
+    }
+    
+    .playlist-details p{
+        font-size: 0.7rem;
+        line-height: 10px;
+    }
+
+    .image-container{
+        padding-top: 10px;
+        width: 400px;
+        max-height: 150px;
+        margin-bottom: 15px; 
+    }
+
+    .image-container img{ 
+        object-fit: cover;    
+    }
+
+    .dropdown1{
+        position: absolute;
+        top: 150px;
+       right: 10px;
+   }
+
+   .image-container{
+    width: 322px;
+    max-height: 100px;
+    margin-bottom: 15px;
+   }
+
+   .image-container img{
+    object-fit: cover;
+   }
+
+  }
+
+@media screen and (max-width: 707px) and (min-width: 479px) {
+
+    .actions {
+        gap: 32px;  
+    }
+
+    h1 {        
+        margin: 48px 0px 32px 20px;        
+    }
+
+    .search-sort {
+        margin: 55px 0px 39px 0px; 
+    }
+
+    .create-btn {
+        margin: 55px 20px 39px 0px;       
+    }
+
+    .search-input {
+        width: 134px;
+    }
+
+    .actions select {
+        padding: 8px 0px 8px 7px;
+        max-width: 70px;
+        background: url('images/Drop Down.svg') no-repeat 55px center; /* Add the icon */
+        background-size: 16px 16px;
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card-layout {
+        max-height: 300px;
+        flex-direction: column;
+    }
+
+    .playlist-details{
+        flex: 1;   
+    }
+
+    .playlist-details h3{
+        font-size: 0.8rem;
+        line-height:10px;   
+    }
+    
+    .playlist-details p{
+        font-size: 0.7rem;
+        line-height: 10px;
+    }
+
+    .image-container{
+        padding-top: 10px;
+        width: 400px;
+        max-height: 150px;
+        margin-bottom: 15px;  
+    }
+
+    .image-container img{ 
+        object-fit: cover; 
+    }
+
+    .dropdown1{
+        position: absolute;
+        top: 150px;
+       right: 10px;
+   }
+
+   .image-container{
+    width: 100%;
+    max-height: 100px;
+    margin-bottom: 15px;
+   }
+   
+   .image-container img{ 
+    object-fit: cover;
+   }
+ 
+  }
+
+  
+
+  @media (max-width: 479px) {
+
+    .actions h1{
+        position: fixed;
+        margin-bottom: 80px;
+        margin-left: -160px;
+        margin-right: auto;       
+    }
+
+    .actions{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .search-bar {      
+        width: 100%; 
+        margin-left: 40px;
+        margin-right: auto;     
+    }
+
+    .search-sort {
+        margin: -290px 50px 0px 10px;
+
+    }
+
+    .actions button {
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+
+
+    .grid-layout {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card-layout {
+        max-height: 300px;
+        flex-direction: column;
+    }
+
+    .playlist-details{
+        flex: 1;     
+    }
+
+    .playlist-details h3{
+        font-size: 0.8rem;
+        line-height:10px;  
+    }
+    
+    .playlist-details p{
+        font-size: 0.7rem;
+        line-height: 10px;
+    }
+
+    .image-container{
+        padding-top: 10px;
+        width: 350px;
+        max-height: 150px;
+        margin-bottom: 15px;   
+    }
+
+    .image-container img{  
+        object-fit: cover;  
+    }
+
+    .dropdown1{
+        position: absolute;
+        top: 150px;
+       right: 10px;
+    }
+
+   .image-container{
+    width: 100%;
+    max-height: 100px;
+    margin-bottom: 15px;
+   }
+   
+   .image-container img{  
+    object-fit: cover;
+   }
+
+}
