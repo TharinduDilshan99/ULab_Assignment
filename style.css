@@ -19,6 +19,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    background-color: #101322;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* background-color: #0D101B; */
     padding: 2rem 4%;
     align-items: center;
