@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>ULab3 Playlist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>ULab3 Playlist</title>
 </head>
+
 <body>
     <div>
-        <div>
          <header>
             <div class="actions">
             <h1>Playlist</h1>
@@ -20,19 +21,22 @@
                     <input type="text" placeholder="Search PlayList">
                 </div>
                 <div class="dropdown">
-                    <select>
-                        <option>Sort By</option>
-                        <option>Show Newest First</option>
-                        <option>Show Oldest First</option>
-                        <option>Show Name A to Z</option>
-                        <option>Show Name Z to A</option>
-                    </select>
+                    <div class="dropdown-select">
+                        <span class="select">Sort By</span>
+                        <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="dropdown-list">
+                        <div class="dropdown-list-item">Show Newest First</div>
+                        <div class="dropdown-list-item">Show Oldest First</div>
+                        <div class="dropdown-list-item">Show Name A to Z</div>
+                        <div class="dropdown-list-item">Show Name Z to A</div>
+                    </div>
                 </div>
             </div>
-                <button class="create-btn">Create</button>
+                <button>+ Create</button>
             </div>
          </header>
-        </div>
+        
 
         <div class="grid-layout">
             <div class="card-layout">
